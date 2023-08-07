@@ -37,16 +37,19 @@ public class MahSignUpStep {
 		for( Map<String, String> namess : DataF) {
 			String ffString = namess.get("Name");
 			driver.findElement(By.cssSelector(".p-relative>input#Student_Name")).sendKeys(ffString);
+			System.out.println("Name is.." + ffString);
 			
 			String ffString1 = namess.get("Emailid");
 			driver.findElement(By.cssSelector(".p-relative>input#Email")).sendKeys(ffString1);
+			System.out.println("Emailid is.." + ffString1);
 			
 			String ffString2 = namess.get("PhoneNo");
 			driver.findElement(By.cssSelector(".p-relative>input#Phone_No")).sendKeys(ffString2);
+			System.out.println("PhoneNo is.." + ffString2);
 		}
 	}
 
-
+	
 
 
 }
